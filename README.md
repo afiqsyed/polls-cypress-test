@@ -19,7 +19,7 @@ Open terminal and run the following command
 Each time after the tests are executed using console. It will generate the 'cucumber-report.html' file that contain the test report
 
 ## Test Cases Covered
--Home Page
+##Home Page
 1. Create and Answer Poll With Minimum 2 Options on <ScreenSize>  (This test run for 2 time with different screen size)
 2. Create and Answer Poll With 5 Options on <ScreenSize> (This test run for 2 time with different screen size)
 3. Show Error When Poll is Created With 1 Option
@@ -34,7 +34,7 @@ Each time after the tests are executed using console. It will generate the 'cucu
 12. User can navigate to contact page
 13. User can navigate to Polls IO Twitter page
 14. User can navigate to Polls IO Linkedin page 
--Question Page
+## Question Page
 1. User can only select 1 answer from the poll
 2. Click View Result Button Will Show The Poll Result
 3. Open and Answer Question Directly From Direct URL
@@ -44,3 +44,6 @@ Each time after the tests are executed using console. It will generate the 'cucu
 7. Verify share to Facebook is working
 8. Verify share to Twitter is working
 9. Verify share to Linkedin is working
+
+![image](https://user-images.githubusercontent.com/12548605/187044523-395b8177-88f8-4c22-a2d4-67fae336352e.png)
+![image](https://user-images.githubusercontent.com/12548605/187044560-4e45157f-72fd-4c63-a8a5-6a5e2d1a654f.png)
