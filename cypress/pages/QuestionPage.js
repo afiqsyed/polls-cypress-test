@@ -20,6 +20,8 @@ class questionPage {
     shareFacebook: () => cy.get('body > section > section > div.container > div.form-container > header > div > div > ul > li:nth-child(4)'),
     shareTwitter: () => cy.get('body > section > section > div.container > div.form-container > header > div > div > ul > li:nth-child(5)'),
     shareLinkedin: () => cy.get('body > section > section > div.container > div.form-container > header > div > div > ul > li:nth-child(6)'),
+    answerNameList: () => cy.get('body > section > section > div.container > div.form-container > ul > li > span.title'),
+    answerPercentage:(position) => cy.get('body > section > section > div.container > div.form-container > ul > li:nth-child('+ position +') > span.pourcentage')
   };
 
   clickVoteButton() {

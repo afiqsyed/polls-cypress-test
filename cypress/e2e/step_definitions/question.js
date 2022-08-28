@@ -106,6 +106,16 @@ Then("Result page will be displayed", () => {
   questionPage.elements.percentage().should("be.visible");
 });
 
+Then("Result page will be displayed with percentage updated", (table) => {
+  table.hashes().forEach((row) => {
+    questionPage.elements.answerNameList().each(($ele, index) => {
+      if ($ele.text().includes(row.Options)) {
+        questionPage.elements.answerPercentage(index + 1).should("have.text", row.Percentage);
+      }
+    });
+  });
+});
+
 And("User click the back button", () => {
   questionPage.clickBackButton();
 });

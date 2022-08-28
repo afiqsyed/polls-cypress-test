@@ -26,7 +26,13 @@ Feature: Polls IO Question Page
         When User click vote on answer page
         And User click "Sample Option 2" from the option list checkbox
         And Click submit button
-        Then Result page will be displayed
+        Then Result page will be displayed with percentage updated
+            | Options         | Percentage  |
+            | Sample Option 1 | 0%          |
+            | Sample Option 2 | 100%        |
+            | Sample Option 3 | 0%          |
+            | Sample Option 4 | 0%          |
+            | Sample Option 5 | 0%          |
 
     Scenario: Click back button will redirect user to home page
         Given User opens the Polls.io Question Page

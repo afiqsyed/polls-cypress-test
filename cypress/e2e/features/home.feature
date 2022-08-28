@@ -6,7 +6,7 @@ Feature: Polls IO Homepage
         Given A user opens the Polls.io website on "<ScreenSize>"
         When User enters the poll question "This is the test question"
         And User fill up the poll options
-            | position | name     |
+            | position | name            |
             |   1      | Option 1 Sample |
             |   2      | Option 2 Sample |
         And A user clicks on the Create this poll button
@@ -16,8 +16,11 @@ Feature: Polls IO Homepage
         When User click vote on answer page
         And User click "Option 2 Sample" from the option list checkbox
         And Click submit button
-        Then Result page will be displayed
-    
+        Then Result page will be displayed with percentage updated
+            | Options         | Percentage  |
+            | Sample Option 1 | 0%          |
+            | Sample Option 2 | 100%        |
+
         Examples:
             | ScreenSize  |
             | iphone-x    |
@@ -41,7 +44,13 @@ Feature: Polls IO Homepage
         When User click vote on answer page
         And User click "Option 3 Sample" from the option list checkbox
         And Click submit button
-        Then Result page will be displayed
+        Then Result page will be displayed with percentage updated
+            | Options         | Percentage  |
+            | Sample Option 1 | 0%          |
+            | Sample Option 2 | 0%          |
+            | Sample Option 3 | 100%        |
+            | Sample Option 4 | 0%          |
+            | Sample Option 5 | 0%          |
 
         Examples:
             | ScreenSize  |
