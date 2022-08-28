@@ -2,7 +2,7 @@ Feature: Polls IO Homepage
 
     Verify Polls IO Homepage
 
-    Scenario Outline: Scenario Outline name: Create and Answer Poll With Minimum 2 Options on <ScreenSize>
+    Scenario Outline: Scenario Outline: Create and Answer Poll With Minimum 2 Options on <ScreenSize>
         Given A user opens the Polls.io website on "<ScreenSize>"
         When User enters the poll question "This is the test question"
         And User fill up the poll options
