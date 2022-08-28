@@ -14,12 +14,19 @@ Open terminal and run the following command
 2. 'npm run cypress:execution'
    or 
    'npx cypress open' (Execute the test using cypress UI)
+   
+## How the test are written
+1. The test are written using Cucumber Gherkin Syntax to increase tests readability.
+2. The page elements in this test are designed using Page Object Model to increase maintainability and reusability 
+
+![image](https://user-images.githubusercontent.com/12548605/187064385-75bd4c4b-cd11-4b50-94c6-b35c6d324d41.png) <br />
+![image](https://user-images.githubusercontent.com/12548605/187064422-3a8e008c-430c-49f2-a778-17cb5b185525.png)
 
 ## Reports
 Each time after the tests are executed using console. It will generate the 'cucumber-report.html' file that contain the test report
 
 ## Test Cases Covered
-##Home Page
+## Home Page
 1. Create and Answer Poll With Minimum 2 Options on <ScreenSize>  (This test run for 2 time with different screen size)
 2. Create and Answer Poll With 5 Options on <ScreenSize> (This test run for 2 time with different screen size)
 3. Show Error When Poll is Created With 1 Option
